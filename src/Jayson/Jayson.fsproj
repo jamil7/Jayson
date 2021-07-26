@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>Jamil Maqdis Anton</Authors>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageId>Jayson</PackageId>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/jamil7/Jayson</RepositoryUrl>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <WarnOn>1182;3390;$(WarnOn)</WarnOn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Int64StringConverter.fs"/>
+        <Compile Include="Default.fs"/>
+        <Compile Include="Jayson.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Update="FSharp.Core" Version="5.0.*"/>
+        <PackageReference Include="FSharp.Core" Version="5.0.*"/>
+        <PackageReference Include="FSharp.Prelude" Version="4.0.3"/>
+        <PackageReference Include="FSharp.SystemTextJson" Version="0.17.4"/>
+    </ItemGroup>
+
+</Project>
